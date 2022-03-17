@@ -1,8 +1,10 @@
-There are 2 pathways before you.
+There are 3 pathways before you.
 
-# The Python Bushido
+# The Easy Bushido
 
-# The Javascript Bushido
+# The Medium Bushido
+
+# The Hard Bushido
 
 choose wisely young warrior.
 
