@@ -1,7 +1,8 @@
+
 https://youtu.be/tAuRQs_d9F8
 
-Design Patterns Every Programmer Should Know
-Creational Patterns
+Design Patterns Every Programmer Should Know https://neetcode.io/courses/lessons/8-design-patterns
+Creational Patterns 
 Factory
 class Burger:
     def __init__(self, ingredients):
