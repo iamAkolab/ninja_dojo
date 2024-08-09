@@ -5,19 +5,16 @@
 
 
 ## Variables
-Variables are dynamicly typed
 ```
+# Variables are dynamicly typed
 n = 0
 print('n =', n)
 
 >>> n = 0
-```
->>> n = 0
-
-```
+`
 n = "abc"
 print('n =', n)
-```
+
 >>> n = abc
 
 # Multiple assignments
@@ -34,7 +31,10 @@ n = 4
 n = None
 print("n =", n)
 >>> n = None
-If-statements
+```
+
+## If-statements
+```
 # If statements don't need parentheses 
 # or curly braces.
 n = 1
@@ -52,7 +52,10 @@ n, m = 1, 2
 if ((n > 2 and 
     n != m) or n == m):
     n += 1
-Loops
+```
+
+## Loops
+```
 n = 5
 while n < 5:
     print(n)
@@ -69,7 +72,9 @@ for i in range(2, 6):
 # Looping from i = 5 to i = 2
 for i in range(5, 1, -1):
     print(i)
-Math
+```
+## Math
+```
 # Division is decimal by default
 print(5 / 2)
 
@@ -111,7 +116,9 @@ print(math.pow(2, 200))
 
 # But still less than infinity
 print(math.pow(2, 200) < float("inf"))
-Arrays
+```
+## Arrays
+```
 # Arrays (called lists in python)
 arr = [1, 2, 3]
 print(arr)
@@ -215,7 +222,9 @@ print(arr[0][0], arr[3][3])
 
 # This won't work
 # arr = [[0] * 4] * 4
-Strings
+```
+## Strings
+```
 # Strings are similar to arrays
 s = "abc"
 print(s[0:2])
@@ -240,7 +249,9 @@ print(ord("b"))
 # Combine a list of strings (with an empty string delimitor)
 strings = ["ab", "cd", "ef"]
 print("".join(strings))
-Queues
+```
+## Queues
+```
 # Queues (double ended queue)
 from collections import deque
 
@@ -257,7 +268,9 @@ print(queue)
 
 queue.pop()
 print(queue)
-HashSets
+```
+## HashSets
+```
 # HashSet
 mySet = set()
 
@@ -279,7 +292,9 @@ print(set([1, 2, 3]))
 # Set comprehension
 mySet = { i for i in range(5) }
 print(mySet)
-HashMaps
+```
+## HashMaps
+```
 # HashMap (aka dict)
 myMap = {}
 myMap["alice"] = 88
@@ -311,7 +326,9 @@ for val in myMap.values():
 
 for key, val in myMap.items():
     print(key, val)
-Tuples
+```
+## Tuples
+```
 # Tuples are like arrays but immutable
 tup = (1, 2, 3)
 print(tup)
@@ -331,7 +348,9 @@ print((1, 2) in mySet)
 
 # Lists can't be keys
 # myMap[[3, 4]] = 5
-Heaps
+```
+## Heaps
+```
 import heapq
 
 # under the hood are arrays
@@ -364,7 +383,10 @@ arr = [2, 1, 8, 4, 5]
 heapq.heapify(arr)
 while arr:
     print(heapq.heappop(arr))
-Functions
+```
+
+## Functions
+```
 def myFunc(n, m):
     return n * m
 
@@ -400,7 +422,10 @@ def double(arr, val):
 nums = [1, 2]
 val = 3
 double(nums, val)
-Classes
+```
+
+## Classes
+```
 class MyClass:
     # Constructor
     def __init__(self, nums):
@@ -418,3 +443,4 @@ class MyClass:
 myObj = MyClass([1, 2, 3])
 print(myObj.getLength())
 print(myObj.getDoubleLength())
+```
