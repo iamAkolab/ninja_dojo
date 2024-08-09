@@ -9,6 +9,8 @@ Variables are dynamicly typed
 ```
 n = 0
 print('n =', n)
+
+>>> n = 0
 ```
 >>> n = 0
 
