@@ -2,6 +2,7 @@
 
 
 # What to Expect from the Course:
+<insert image here>
 This course takes a hands-on and a practical approach. We aim to help you understand why design patterns are essential and what drives their creation in a compendious manner. The patterns we’ll be diving into include:
 
 Behavioral Patterns:
