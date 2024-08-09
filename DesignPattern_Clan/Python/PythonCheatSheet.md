@@ -1,15 +1,21 @@
-https://neetcode.io/courses/lessons/python-for-coding-interviews
-https://youtu.be/0K_eZGS5NsU
+# Python Cheat Sheet
 
-Python Cheat Sheet
-Variables
-# Variables are dynamicly typed
+- **[Page Link](https://neetcode.io/courses/lessons/python-for-coding-interviews)**
+- **[Video Link](https://youtu.be/0K_eZGS5NsU)**
+
+
+## Variables
+Variables are dynamicly typed
+```
 n = 0
 print('n =', n)
+```
 >>> n = 0
 
+```
 n = "abc"
 print('n =', n)
+```
 >>> n = abc
 
 # Multiple assignments
