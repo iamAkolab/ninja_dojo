@@ -16,6 +16,7 @@ When a key element matches the first element in the array, then the linear searc
 Disadvantages.
 Inversely, when a key element matches the last element in the array or a key element doesn't match any element then the Linear search algorithm is a worst-case.
 
+
 ## STEPS
 Linear Search ( Array A, Value x)  Step 1: Set i to 1
 Step 2: if i > n then go to step 7
