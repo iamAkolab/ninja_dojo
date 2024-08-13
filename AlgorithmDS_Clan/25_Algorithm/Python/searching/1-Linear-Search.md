@@ -66,7 +66,7 @@ else:
     print("Element is present at index", result)
 ```
 
-BIG O ANALYSIS
+## BIG O ANALYSIS
 Class:	Search algorithm
 Worst-case performance:	O(n)
 Best-case performance:	O(1)
