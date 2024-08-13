@@ -17,6 +17,7 @@ Disadvantages.
 Inversely, when a key element matches the last element in the array or a key element doesn't match any element then the Linear search algorithm is a worst-case.
 
 ![alt text](https://github.com/iamAkolab/ninja_dojo/blob/84f3e5a336a16282e47d30c8ab57629e96ef3fbb/AlgorithmDS_Clan/25_Algorithm/img/Linear%20Search.jpg "Linear Search") 
+
 ## STEPS
 Linear Search ( Array A, Value x)  Step 1: Set i to 1
 Step 2: if i > n then go to step 7
