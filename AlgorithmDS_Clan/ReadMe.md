@@ -4,6 +4,6 @@ There are 2 pathways before you.
 
 # The Python Bushido
 
-# The Javascript Bushido
+# The Java Bushido
 
 choose wisely young warrior.
