@@ -8,3 +8,4 @@ There are 3 pathways before you.
 
 choose wisely young warrior.
 
+[Link](https://neetcode.io/practice?tab=blind75)
