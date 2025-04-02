@@ -1,5 +1,5 @@
-![25 Algorithm](https://github.com/iamAkolab/ninja_dojo/blob/main/AlgorithmDS_Clan/25_Algorithm/img/all_25_algorithms.jpg)
-
+# Algorithm And Data Structure Clan
+This contains both the 25 Algorithm and NeetCode Algorithms
 There are 2 pathways before you.
 
 # The Python Bushido
