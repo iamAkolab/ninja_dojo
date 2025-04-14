@@ -18,6 +18,8 @@ Online; i.e., can sort a list as it receives it.
 Disadvantages.
 it does not perform as well as other, better sorting algorithms. With n-squared steps required for every n element to be sorted, the insertion sort does not deal well with a huge list
 
+![Alt Text](https://github.com/iamAkolab/ninja_dojo/blob/main/AlgorithmDS_Clan/25_Algorithm/img/Insertion%20Search.jpg)
+
 ## STEPS
 The algorithm works as follows:
 
