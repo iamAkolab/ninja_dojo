@@ -88,10 +88,12 @@ def binarySearch(arr, l, r, x):
 ```
  
 ## Driver Code
+```
 arr = [ 2, 3, 4, 10, 40 ]
 x = 10
- 
-# Function call
+```
+
+## Function call
 ```
 result = binarySearch(arr, 0, len(arr)-1, x)
  
