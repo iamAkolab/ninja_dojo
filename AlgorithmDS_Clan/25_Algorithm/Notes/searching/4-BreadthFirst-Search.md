@@ -15,6 +15,7 @@ Disadvantages.
 BFS consumes large memory space. Its time complexity is more.
 It has long pathways, when all paths to a destination are on approximately the same search depth.
 
+![Alt Text](https://github.com/iamAkolab/ninja_dojo/blob/main/AlgorithmDS_Clan/25_Algorithm/img/Breadth-First%20Search.jpg)
 ## STEPS
 The algorithm works as follows:
 
