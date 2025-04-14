@@ -143,5 +143,5 @@ public class Solution {
 * Space complexity: O(n)
   
 # Links
-https://neetcode.io/solutions/contains-duplicate
-https://leetcode.com/problems/contains-duplicate/description/
+* https://neetcode.io/solutions/contains-duplicate
+* https://leetcode.com/problems/contains-duplicate/description/
