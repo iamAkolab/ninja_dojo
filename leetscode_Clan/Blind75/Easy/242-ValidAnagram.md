@@ -20,7 +20,7 @@ You should aim for a solution with O(n + m) time and O(1) space, where n is the 
 
 ## 1. Sorting
 ```
-Python
+# Python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -29,7 +29,7 @@ class Solution:
         return sorted(s) == sorted(t)
 ```
 ```
-Java
+# Java
 public class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
@@ -51,7 +51,7 @@ Where n is the length of string s and m is the length of string t.
 
 ## 2. Hash Map
 ```
-Python
+# Python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -65,7 +65,7 @@ class Solution:
         return countS == countT
 ```
 ```
-Java
+# Java
 public class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
@@ -89,7 +89,7 @@ Where n is the length of string s and m is the length of string t.
 
 ## 3. Hash Table (Using Array)
 ```
-Python
+# Python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -106,7 +106,7 @@ class Solution:
         return True
 ```
 ```
-Java
+# Java
 public class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
