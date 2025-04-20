@@ -2,8 +2,9 @@ There are 3 pathways before you. [Link](https://neetcode.io/practice?tab=blind75
 
 # The Easy Bushido
 ## Arrays & Hashing
-* Contains Duplication
-* 
+* 217 - Contains Duplicate
+* 242 - Valid Anagram
+* 1 - Two Sum
 
 # The Medium Bushido
 
