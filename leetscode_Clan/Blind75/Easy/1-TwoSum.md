@@ -27,6 +27,41 @@ Output: [0,1]
 You should aim for a solution with O(n + m) time and O(1) space, where n is the length of the string s and m is the length of the string t.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
+# 1. Sorting
+```
+# Python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+            
+        return sorted(s) == sorted(t)
+```
+```
+# Java
+public class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        char[] sSort = s.toCharArray();
+        char[] tSort = t.toCharArray();
+        Arrays.sort(sSort);
+        Arrays.sort(tSort);
+        return Arrays.equals(sSort, tSort);
+    }
+}
+```
+## Time & Space Complexity
+Time complexity: O(nlogn + mlogm)
+Space complexity: O(n+m) depending on the sorting algorithm.
+
+Where 
+n is the length of string s and m is the length of string t.
+
+#
+
 # Links
 https://neetcode.io/solutions/two-sum
 https://leetcode.com/problems/two-sum/description/
