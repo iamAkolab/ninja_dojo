@@ -23,7 +23,8 @@ Output: [0,1]
 * -109 <= target <= 109
 * Only one valid answer exists.
  
-
+## Recommended Time & Space Complexity
+You should aim for a solution with O(n + m) time and O(1) space, where n is the length of the string s and m is the length of the string t.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
 # Links
