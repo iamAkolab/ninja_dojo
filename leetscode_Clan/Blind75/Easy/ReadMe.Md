@@ -1,4 +1,6 @@
-# 19 Easy .
+# 19 Easy Level .
 
 ## Arrays & Hashing
-* Contains Duplication 
+* Two Sums
+* Contains Duplication
+* Valid Anagram
