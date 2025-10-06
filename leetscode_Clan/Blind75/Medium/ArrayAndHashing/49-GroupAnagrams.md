@@ -4,16 +4,16 @@ Given two strings s and t, return true if t is an anagram of s, and false otherw
 An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
 
 ## Example 1:
-Input: strs = ["act","pots","tops","cat","stop","hat"]
-Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+* Input: strs = ["act","pots","tops","cat","stop","hat"]
+* Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
 
 ## Example 2:
-Input: strs = ["x"]
-Output: [["x"]]
+* Input: strs = ["x"]
+* Output: [["x"]]
 
 ## Example 3:
-Input: strs = [""]
-Output: [[""]]
+* Input: strs = [""]
+* Output: [[""]]
 
 ## Constraints:
 * 1 <= strs.length <= 1000.
