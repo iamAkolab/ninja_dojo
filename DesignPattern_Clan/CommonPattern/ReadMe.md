@@ -24,6 +24,7 @@
 * Microservices: Build applications as loosely coupled services.
 * Event-Driven: Uses events for asynchronous communication.
 
+```
 backend-skills-2026/
 ├── README.md                     # Overview, goals, weekly roadmap
 ├── .gitignore                    # Ignore IDE/cache files
@@ -71,3 +72,4 @@ backend-skills-2026/
 └── utils/
     ├── setup.sh                    # Install tools, start local Kafka/Redis
     └── review-checklist.md         # Weekly self-audit
+```
