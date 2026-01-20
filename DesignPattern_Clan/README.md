@@ -49,3 +49,77 @@ Each pattern includes implementations in:
 ```bash
 cd creational/singleton/go
 go run main.go
+```
+
+## 📁 Project Structure
+```
+design-patterns-mastery-2026/
+├── README.md                         # Overview, philosophy, roadmap
+├── .gitignore                        # Standard ignores
+├── docs/
+│   └── pattern-guide.md              # Summary of all patterns + when to use
+├── creational/
+│   ├── singleton/
+│   │   ├── go/                       # Language-specific implementations
+│   │   ├── python/
+│   │   └── java/
+│   ├── factory-method/
+│   │   ├── go/
+│   │   ├── python/
+│   │   └── java/
+│   └── builder/
+│       ├── go/
+│       ├── python/
+│       └── java/
+├── structural/
+│   ├── adapter/
+│   │   ├── go/
+│   │   ├── python/
+│   │   └── java/
+│   ├── decorator/
+│   │   ├── go/
+│   │   ├── python/
+│   │   └── java/
+│   └── facade/
+│       ├── go/
+│       ├── python/
+│       └── java/
+├── behavioral/
+│   ├── observer/
+│   │   ├── go/
+│   │   ├── python/
+│   │   └── java/
+│   ├── strategy/
+│   │   ├── go/
+│   │   ├── python/
+│   │   └── java/
+│   └── command/
+│       ├── go/
+│       ├── python/
+│       └── java/
+├── concurrency/
+│   ├── thread-pool/
+│   │   ├── java/                      # Primary (as noted)
+│   │   ├── go/                       # Goroutines + worker pool
+│   │   └── python/                   # ThreadPoolExecutor
+│   ├── future-promise/
+│   │   ├── java/
+│   │   ├── go/                       # Channels + async func
+│   │   └── python/                   # asyncio.Future
+│   └── blocking-queue/
+│       ├── java/
+│       ├── go/                       # Buffered channels
+│       └── python/                   # queue.Queue
+├── architectural/
+│   ├── mvc/
+│   │   ├── web-app-python-flask/     # Simple demo
+│   │   └── web-app-go-gin/
+│   ├── microservices/
+│   │   └── order-inventory-demo/     # Two services with REST/gRPC
+│   └── event-driven/
+│       └── trade-alert-system/       # Kafka/Pulsar + event handlers
+├── playground/
+│   └── combined-demo/                # Integrate multiple patterns (e.g., Builder + Strategy + Observer)
+└── utils/
+    └── run-all.sh                    # Script to test examples across languages
+```
