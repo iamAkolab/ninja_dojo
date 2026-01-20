@@ -2,7 +2,8 @@
 
 * https://neetcode.io/courses/lessons/8-design-patterns
 * https://youtu.be/tAuRQs_d9F8
-* 
+
+
 ## Creational Patterns 
 ### Factory
 ```
@@ -108,7 +109,7 @@ Output
 False True True
 ```
 ## Behavioural Patterns
-Observer / PubSub
+### Observer / PubSub
 It's common for different components of an app to respond to events or state changes, but how can we communicate these events?
 The Observer pattern is a popular solution. We have a Subject (aka Publisher) which will be the source of events. And we could have multiple Observers (aka Subscribers) which will recieve events from the Subject in realtime.
 
@@ -149,7 +150,7 @@ In this case we have multiple Subscribers listening to a single published. But u
 Since the Publishers & Subscribers don't have to worry about each others' implementations, they are loosely coupled.
 
 User sub1 received notification from neetcode: A new video released User sub2 received notification from neetcode: A new video released User sub3 received notification from neetcode: A new video released
-Iterator
+### Iterator
 Many objects in python have built-in iterators. That's why we can conveniently iterate through an array using the key word in.
 
 myList = [1, 2, 3]
@@ -193,12 +194,16 @@ myList = LinkedList(head)
 # Iterate through LinkedList
 for n in myList:
     print(n) 
+```
+```
 Output
 
 1 2 3
-Strategy
-A Class may have different behaviour, or invoke a different method based on something we define (i.e. a Strategy). For example, we can filter an array by removing positive values; or we could filter it by removing all odd values. These are two filtering strategies we could implement, but we could add many more.
+```
 
+### Strategy
+A Class may have different behaviour, or invoke a different method based on something we define (i.e. a Strategy). For example, we can filter an array by removing positive values; or we could filter it by removing all odd values. These are two filtering strategies we could implement, but we could add many more.
+```
 from abc import ABC, abstractmethod
 
 class FilterStrategy(ABC):
@@ -233,13 +238,16 @@ values = Values([-7, -4, -1, 0, 2, 6, 9])
 
 print(values.filter(RemoveNegativeStrategy()))
 print(values.filter(RemoveOddStrategy()))
+```
+```
 Output
 
 [0, 2, 6, 9] [-4, 0, 2, 6]
+```
 A common alternative to this pattern is to simply pass in an inline / lambda function, which allows us to extend the behaviour of a method or class.
 
-Structural Patterns
-Facade
+## Structural Patterns
+### Facade
 According to Oxford Languages, a Facade is
 
 an outward appearance that is maintained to conceal a less pleasant or creditable reality.
@@ -247,6 +255,7 @@ In the programming world, the "outward appearance" is the class or interface we 
 So a Facade, is simply a wrapper class that can be used to abstract lower-level details that we don't want to worry about.
 
 # Python arrays are dynamic by default, but this is an example of resizing.
+```
 class Array:
     def __init__(self):
         self.capacity = 2
@@ -275,11 +284,12 @@ class Array:
     # Remove the last element in the array
     def popback(self):
         if self.length > 0:
-            self.length -= 1 
-Adapter
+            self.length -= 1
+```
+### Adapter
 Adapters allow incompatible objects to be used together. Following the Open-Closed principle, we can extend class behaviour without modifying the class itself.
 If a MicroUsbCable class is initially incompatible with UsbPort, we can create a wrapper class (i.e. an Adapter), which makes them compatible. In this case, a MicroToUsbAdapter makes them compatible, similar to how we use adapters in the real-world.
-
+```
 class UsbCable:
     def __init__(self):
         self.isPlugged = False
@@ -319,3 +329,4 @@ class MicroToUsbAdapter(UsbCable):
 microToUsbAdapter = MicroToUsbAdapter(MicroUsbCable())
 usbPort2 = UsbPort()
 usbPort2.plug(microToUsbAdapter)
+```
