@@ -1,9 +1,11 @@
+# Design Patterns Every Programmer Should Know 
 
-https://youtu.be/tAuRQs_d9F8
-
-Design Patterns Every Programmer Should Know https://neetcode.io/courses/lessons/8-design-patterns
-Creational Patterns 
-Factory
+* https://neetcode.io/courses/lessons/8-design-patterns
+* https://youtu.be/tAuRQs_d9F8
+* 
+## Creational Patterns 
+### Factory
+```
 class Burger:
     def __init__(self, ingredients):
         self.ingredients = ingredients
@@ -29,10 +31,14 @@ burgerFactory = BurgerFactory()
 burgerFactory.createCheeseBurger().print()
 burgerFactory.createDeluxeCheeseBurger().print()
 burgerFactory.createVeganBurger().print()
+```
+```
 Output
 
 ['bun', 'cheese', 'beef-patty'] ['bun', 'tomatoe', 'lettuce', 'cheese', 'beef-patty'] ['bun', 'special-sauce', 'veggie-patty']
-Builder
+```
+### Builder
+```
 class Burger:
     def __init__(self):
         self.buns = None
@@ -72,7 +78,9 @@ burger = BurgerBuilder() \
             .addPatty("fish-patty") \
             .addCheese("swiss cheese") \
             .build()
-Singleton
+```
+### Singleton
+```
 class ApplicationState:
     instance = None
 
@@ -93,10 +101,13 @@ appState1.isLoggedIn = True
 
 print(appState1.isLoggedIn)
 print(appState2.isLoggedIn)
+```
+```
 Output
 
 False True True
-Behavioural Patterns
+```
+## Behavioural Patterns
 Observer / PubSub
 It's common for different components of an app to respond to events or state changes, but how can we communicate these events?
 The Observer pattern is a popular solution. We have a Subject (aka Publisher) which will be the source of events. And we could have multiple Observers (aka Subscribers) which will recieve events from the Subject in realtime.
