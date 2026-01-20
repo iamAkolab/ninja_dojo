@@ -2,43 +2,41 @@
 
 A practical, multi-language repository to learn, implement, and combine essential software design patterns — from foundational OOP to modern concurrency and architecture.
 
-## 🧩 Pattern Categories
-## 1. Creational Patterns
-* Singleton: Ensures a single global instance.
-* Factory Method: Creates objects without specifying classes.
-* Builder: Constructs complex objects step-by-step.
+## 🎯 Pattern Categories
 
-## 2. Structural Patterns
-** Adapter: Connects incompatible interfaces.
-** Decorator: Dynamically adds functionalities.
-** Facade: Simplifies complex subsystems.
+### 1. Creational Patterns – Manage object creation  
+- **Singleton**: Ensures a single global instance.  
+- **Factory Method**: Creates objects without specifying concrete classes.  
+- **Builder**: Constructs complex objects step-by-step with fine-grained control.
 
-## 3. Behavioral Patterns
-* Observer: Notifies dependents of state changes.
-* Strategy: Switches algorithms at runtime.
-* Command: Encapsulates requests as objects.
+---
 
-## 4. Concurrency Patterns (Java specific)
-* Thread Pool: Reuses threads for multiple tasks.
-* Future/Promise: Manages async results.
-* Blocking Queue: Safe producer-consumer handling.
+### 2. Structural Patterns – Compose objects and classes  
+- **Adapter**: Connects incompatible interfaces to work together.  
+- **Decorator**: Dynamically adds responsibilities to an object without subclassing.  
+- **Facade**: Provides a simplified interface to a complex subsystem.
 
-## 5. Architectural Patterns
-* MVC (Model-View-Controller): Separates data, UI, and logic layers.
-* Microservices: Build applications as loosely coupled services.
-* Event-Driven: Uses events for asynchronous communication.
-  
+---
 
-1. **Creational** – Manage object creation  
-   (`Singleton`, `Factory Method`, `Builder`)
-2. **Structural** – Compose objects/classes  
-   (`Adapter`, `Decorator`, `Facade`)
-3. **Behavioral** – Assign responsibilities & communication  
-   (`Observer`, `Strategy`, `Command`)
-4. **Concurrency** – Handle parallelism safely  
-   (`Thread Pool`, `Future/Promise`, `Blocking Queue`)
-5. **Architectural** – System-level structure  
-   (`MVC`, `Microservices`, `Event-Driven`)
+### 3. Behavioral Patterns – Assign responsibilities and communication  
+- **Observer**: Notifies dependent objects of state changes (publish-subscribe).  
+- **Strategy**: Enables switching algorithms or behaviors at runtime.  
+- **Command**: Encapsulates a request as an object, supporting queuing, logging, and undo.
+
+---
+
+### 4. Concurrency Patterns – Handle parallelism safely  
+> *Originally Java-centric, but applicable across modern languages.*  
+- **Thread Pool**: Reuses a fixed set of threads to execute multiple tasks efficiently.  
+- **Future / Promise**: Represents the result of an asynchronous computation.  
+- **Blocking Queue**: Coordinates safe producer-consumer communication with built-in synchronization.
+
+---
+
+### 5. Architectural Patterns – Define system-level structure  
+- **MVC (Model-View-Controller)**: Separates data (Model), presentation (View), and logic (Controller).  
+- **Microservices**: Structures an application as a collection of loosely coupled, independently deployable services.  
+- **Event-Driven Architecture**: Uses events to trigger and communicate between decoupled components asynchronously.
 
 ## 🌐 Multi-Language Support
 Each pattern includes implementations in:
