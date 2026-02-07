@@ -35,7 +35,7 @@ Encapsulate object creation and promote loose coupling.
 - Concrete Products
 - Factory class
 
-### Java Example
+### ☕ Java Example
 
 ```java
 interface Shape {
@@ -81,7 +81,7 @@ Separate object construction from representation.
 - Builder class
 - Product class
 
-### Java Example
+### ☕ Java Example
 
 ```java
 class User {
@@ -129,7 +129,7 @@ Control shared resources.
 - Configuration management
 - Database connections
 
-### Java Example (Thread-safe)
+### ☕ Java Example (Thread-safe)
 
 ```java
 class Singleton {
@@ -161,7 +161,7 @@ Enable event-driven systems.
 - GUI frameworks
 - Notification systems
 
-### Java Example
+### ☕ Java Example
 
 ```java
 import java.util.*;
@@ -205,7 +205,7 @@ Encapsulate traversal logic.
 - Custom collections
 - Multiple traversal strategies
 
-### Java Example
+### ☕ Java Example
 
 ```java
 import java.util.Iterator;
@@ -234,7 +234,7 @@ Enable behavior selection at runtime.
 - Multiple ways to perform a task
 - Avoid large conditional statements
 
-### Java Example
+### ☕ Java Example
 
 ```java
 interface PaymentStrategy {
@@ -316,7 +316,7 @@ Hide complexity and improve usability.
 - Complex APIs
 - Layered architecture
 
-### Java Example
+### ☕ Java Example
 
 ```java
 class CPU {
