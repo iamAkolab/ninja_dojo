@@ -1,41 +1,43 @@
-# 🔥 Quick Comparison Summary
-| Pattern   | Type       | Purpose                          |
-|-----------|------------|----------------------------------|
-| Factory   | Creational | Object creation abstraction      |
-| Builder   | Creational | Step-by-step object construction |
-| Singleton | Creational | Single shared instance           |
-| Observer  | Behavioral | Event notification system        |
-| Iterator  | Behavioral | Sequential collection traversal  |
-| Strategy  | Behavioral | Interchangeable algorithms       |
-| Adapter   | Structural | Interface compatibility          |
-| Facade    | Structural | Simplify complex systems         |
+# Design Patterns in Java – Study Notes
 
+This repository contains concise study notes on major software design patterns with definitions, intent, structure, when to use them, and Java examples.
+
+---
+
+## 📚 Table of Contents
+
+1. [Factory Pattern](#1-factory-pattern)
+2. [Builder Pattern](#2-builder-pattern)
+3. [Singleton Pattern](#3-singleton-pattern)
+4. [Observer Pattern](#4-observer-pattern)
+5. [Iterator Pattern](#5-iterator-pattern)
+6. [Strategy Pattern](#6-strategy-pattern)
+7. [Adapter Pattern](#7-adapter-pattern)
+8. [Facade Pattern](#8-facade-pattern)
+9. [Quick Comparison Summary](#quick-comparison-summary)
+
+---
 # Creational
 ## 1. Factory Pattern
-📌 Definition
 
-The Factory Pattern creates objects without exposing the instantiation logic to the client. It returns objects through a common interface.
+### Definition
+The **Factory Pattern** creates objects without exposing the instantiation logic to the client. It returns objects through a common interface.
 
-🎯 Intent
-
+### Intent
 Encapsulate object creation and promote loose coupling.
 
-✅ When to use
+### When to Use
+- When object creation is complex
+- When code should depend on interfaces, not concrete classes
 
-When object creation is complex
+### Structure
+- Product (interface)
+- Concrete Products
+- Factory class
 
-When code should depend on interfaces, not concrete classes
+### Java Example
 
-🧱 Structure
-
-Product (interface)
-
-Concrete Products
-
-Factory class
-
-☕ Java Example
-```
+```java
 interface Shape {
     void draw();
 }
@@ -61,29 +63,27 @@ class ShapeFactory {
 }
 ```
 
+---
+
 ## 2. Builder Pattern
-📌 Definition
 
-The Builder Pattern constructs complex objects step-by-step.
+### Definition
+The **Builder Pattern** constructs complex objects step-by-step.
 
-🎯 Intent
-
+### Intent
 Separate object construction from representation.
 
-✅ When to use
+### When to Use
+- Objects with many optional parameters
+- Immutable objects
 
-Objects with many optional parameters
+### Structure
+- Builder class
+- Product class
 
-Immutable objects
+### Java Example
 
-🧱 Structure
-
-Builder class
-
-Product class
-
-☕ Java Example
-```
+```java
 class User {
     private String name;
     private int age;
@@ -114,25 +114,24 @@ class User {
 }
 ```
 
+---
+
 ## 3. Singleton Pattern
-📌 Definition
 
-Ensures a class has only one instance and provides global access.
+### Definition
+Ensures a class has **only one instance** and provides global access.
 
-🎯 Intent
-
+### Intent
 Control shared resources.
 
-✅ When to use
+### When to Use
+- Logging
+- Configuration management
+- Database connections
 
-Logging
+### Java Example (Thread-safe)
 
-Configuration management
-
-Database connections
-
-☕ Java Example (Thread-safe)
-```
+```java
 class Singleton {
     private static Singleton instance;
 
@@ -146,26 +145,25 @@ class Singleton {
     }
 }
 ```
+
+---
 # Behavioral
 ## 4. Observer Pattern
-📌 Definition
 
-Defines a one-to-many dependency so observers are notified automatically.
+### Definition
+Defines a **one-to-many dependency** so observers are notified automatically.
 
-🎯 Intent
-
+### Intent
 Enable event-driven systems.
 
-✅ When to use
+### When to Use
+- Event systems
+- GUI frameworks
+- Notification systems
 
-Event systems
+### Java Example
 
-GUI frameworks
-
-Notification systems
-
-☕ Java Example
-```
+```java
 import java.util.*;
 
 interface Observer {
@@ -192,23 +190,24 @@ class Publisher {
     }
 }
 ```
-5. Iterator Pattern
-📌 Definition
 
+---
+
+## 5. Iterator Pattern
+
+### Definition
 Provides a way to access elements of a collection sequentially without exposing its structure.
 
-🎯 Intent
-
+### Intent
 Encapsulate traversal logic.
 
-✅ When to use
+### When to Use
+- Custom collections
+- Multiple traversal strategies
 
-Custom collections
+### Java Example
 
-Multiple traversal strategies
-
-☕ Java Example
-```
+```java
 import java.util.Iterator;
 import java.util.List;
 
@@ -220,23 +219,24 @@ class NameRepository implements Iterable<String> {
     }
 }
 ```
-6. Strategy Pattern
-📌 Definition
 
+---
+
+## 6. Strategy Pattern
+
+### Definition
 Defines a family of algorithms and makes them interchangeable.
 
-🎯 Intent
-
+### Intent
 Enable behavior selection at runtime.
 
-✅ When to use
+### When to Use
+- Multiple ways to perform a task
+- Avoid large conditional statements
 
-Multiple ways to perform a task
+### Java Example
 
-Avoid large conditional statements
-
-☕ Java Example
-```
+```java
 interface PaymentStrategy {
     void pay(int amount);
 }
@@ -266,23 +266,23 @@ class ShoppingCart {
 }
 ```
 
-7. Adapter Pattern
-📌 Definition
+---
+# Structural
+## 7. Adapter Pattern
 
+### Definition
 Allows incompatible interfaces to work together.
 
-🎯 Intent
-
+### Intent
 Convert one interface into another expected by the client.
 
-✅ When to use
+### When to Use
+- Integrating legacy systems
+- Third-party libraries
 
-Integrating legacy systems
+### Java Example
 
-Third-party libraries
-
-☕ Java Example
-```
+```java
 interface MediaPlayer {
     void play(String file);
 }
@@ -301,23 +301,24 @@ class MediaAdapter implements MediaPlayer {
     }
 }
 ```
-8. Facade Pattern
-📌 Definition
 
+---
+
+## 8. Facade Pattern
+
+### Definition
 Provides a simplified interface to a complex subsystem.
 
-🎯 Intent
-
+### Intent
 Hide complexity and improve usability.
 
-✅ When to use
+### When to Use
+- Complex APIs
+- Layered architecture
 
-Complex APIs
+### Java Example
 
-Layered architecture
-
-☕ Java Example
-```
+```java
 class CPU {
     void start() { System.out.println("CPU started"); }
 }
@@ -336,3 +337,25 @@ class ComputerFacade {
     }
 }
 ```
+
+---
+
+## Quick Comparison Summary
+
+| Pattern   | Type       | Purpose                          |
+|-----------|------------|----------------------------------|
+| Factory   | Creational | Object creation abstraction      |
+| Builder   | Creational | Step-by-step object construction |
+| Singleton | Creational | Single shared instance           |
+| Observer  | Behavioral | Event notification system        |
+| Iterator  | Behavioral | Sequential collection traversal  |
+| Strategy  | Behavioral | Interchangeable algorithms       |
+| Adapter   | Structural | Interface compatibility          |
+| Facade    | Structural | Simplify complex systems         |
+
+---
+
+## License
+
+This content is provided for educational and learning purposes.
+
